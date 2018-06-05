@@ -1,0 +1,12 @@
+<p>
+  el mejor video juego {{juego}}
+</p>
+<h3 *ngIf="mostrar_retro != true"> EL mejor juego es {{juego}} </h3>
+<h3  [style.background]= "'red'" *ngIf="mostrar_retro"> EL mejor juego es {{mejor_juego_retro}} </h3>
+
+
+<h3>Listado de VIdeojuegos</h3>
+
+<ul>
+  <li *ngFor="let game of videoJuegos">{{game}}</li>
+</ul>
